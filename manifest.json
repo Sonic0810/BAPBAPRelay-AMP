@@ -10,7 +10,7 @@
       "DisplayName": "BAPBAPRelay",
       "Description": "UDP relay server for BAPBAP custom games",
       "kvp": "BAPBAPRelay.kvp",
-      "supportedFiles": ["bapbaprelayports.json"]
+      "supportedFiles": ["bapbaprelayports.json", "start.sh"]
     }
   ]
 }
