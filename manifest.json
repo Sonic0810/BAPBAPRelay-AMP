@@ -6,6 +6,7 @@
   "configs": [
     {
       "id": "bapbaprelay",
+      "AppConfigId": "e4f7c8b2-ba0b-4e1a-9f99-a0c108100aaa",
       "DisplayName": "BAPBAPRelay",
       "Description": "UDP relay server for BAPBAP custom games",
       "kvp": "BAPBAPRelay.kvp",

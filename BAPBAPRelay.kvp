@@ -1,5 +1,6 @@
 Meta.DisplayName=BAPBAPRelay
 Meta.Description=UDP relay server for BAPBAP custom games
+Meta.AppConfigId=e4f7c8b2-ba0b-4e1a-9f99-a0c108100aaa
 Meta.OS=Linux
 Meta.Arch=x86_64
 Meta.Author=Sonic0810
