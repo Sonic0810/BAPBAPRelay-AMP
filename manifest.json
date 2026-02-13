@@ -1,0 +1,15 @@
+{
+  "id": "sonic0810-bapbap",
+  "origin": "Sonic0810",
+  "url": "",
+  "prefix": "BAPBAP",
+  "configs": [
+    {
+      "id": "bapbaprelay",
+      "DisplayName": "BAPBAPRelay",
+      "Description": "UDP relay server for BAPBAP custom games",
+      "kvp": "BAPBAPRelay.kvp",
+      "supportedFiles": ["bapbaprelayports.json"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Port": 7777,
+    "Protocol": "UDP",
+    "Ref": "GamePort",
+    "Name": "Game Port",
+    "Description": "UDP port that game clients connect to",
+    "Required": true
+  },
+  {
+    "Port": 7778,
+    "Protocol": "UDP",
+    "Ref": "HostPort",
+    "Name": "Host Tunnel Port",
+    "Description": "UDP port that the host tunnel connects to",
+    "Required": true
+  }
+]
