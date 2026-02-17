@@ -5,12 +5,18 @@
   "prefix": "BAPBAP",
   "configs": [
     {
-      "id": "bapbaprelay",
-      "AppConfigId": "e4f7c8b2-ba0b-4e1a-9f99-a0c108100aaa",
-      "DisplayName": "BAPBAPRelay",
-      "Description": "UDP relay server for BAPBAP custom games",
-      "kvp": "BAPBAPRelay.kvp",
-      "supportedFiles": ["bapbaprelayports.json", "start.sh"]
+      "id": "bapbapdedicatedhost",
+      "AppConfigId": "a8b16688-1bce-42be-a85b-81f83e4de5b2",
+      "DisplayName": "BAPBAPDedicatedHost",
+      "Description": "Single-round dedicated host coordinator + relay for BAPBAP",
+      "kvp": "BAPBAPDedicatedHost.kvp",
+      "supportedFiles": [
+        "bapbapdedicatedhostports.json",
+        "start.sh",
+        "dedicatedhost.json",
+        "start-dedicated-round.sh",
+        "stop-dedicated-round.sh"
+      ]
     }
   ]
 }

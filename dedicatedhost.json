@@ -1,0 +1,14 @@
+{
+  "apiPort": 25910,
+  "relayGamePort": 25905,
+  "relayHostPort": 25904,
+  "publicHost": "CHANGE_ME_PUBLIC_IP_OR_DNS",
+  "workingDirectory": ".",
+  "startCommand": "",
+  "stopCommand": "",
+  "dedicatedCommand": "",
+  "dedicatedStopCommand": "",
+  "prepareTimeoutSeconds": 90,
+  "maxMatchSeconds": 3600,
+  "apiKey": ""
+}

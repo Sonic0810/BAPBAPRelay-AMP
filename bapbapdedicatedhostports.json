@@ -1,0 +1,26 @@
+[
+  {
+    "Port": 25910,
+    "Protocol": 0,
+    "Ref": "ApiPort",
+    "Name": "Coordinator API",
+    "Description": "HTTP API for reserve/start/end/reset",
+    "Required": true
+  },
+  {
+    "Port": 25905,
+    "Protocol": 1,
+    "Ref": "RelayGamePort",
+    "Name": "Relay Game Port",
+    "Description": "UDP port game clients connect to",
+    "Required": true
+  },
+  {
+    "Port": 25904,
+    "Protocol": 1,
+    "Ref": "RelayHostPort",
+    "Name": "Relay Host Port",
+    "Description": "UDP port dedicated host tunnel connects to",
+    "Required": true
+  }
+]
