@@ -12,6 +12,7 @@
       "kvp": "BAPBAPDedicatedHost.kvp",
       "supportedFiles": [
         "bapbapdedicatedhostports.json",
+        "bapbapdedicatedhostconfigmanifest.json",
         "start.sh",
         "dedicatedhost.json",
         "start-dedicated-round.sh",

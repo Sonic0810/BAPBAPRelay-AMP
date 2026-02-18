@@ -1,0 +1,35 @@
+[
+  {
+    "DisplayName": "Launcher Executable",
+    "Description": "Executable used by AMP to start the dedicated host launcher.",
+    "Keywords": "startup executable binary",
+    "FieldName": "$LauncherExecutable",
+    "InputType": "text",
+    "DefaultValue": "/bin/bash",
+    "Category": "BAPBAP Dedicated Host:settings_applications",
+    "SubCategory": "Startup:play_arrow:1",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Launcher Arguments",
+    "Description": "Command line arguments for the launcher executable.",
+    "Keywords": "startup args commandline",
+    "FieldName": "$LauncherArgs",
+    "InputType": "text",
+    "DefaultValue": "-c \"chmod +x ./start.sh ./BAPBAPDedicatedHost ./start-dedicated-round.sh ./stop-dedicated-round.sh || true; exec ./start.sh --api-port {{$ApiPort}} --relay-game-port {{$RelayGamePort}} --relay-host-port {{$RelayHostPort}} --config ./dedicatedhost.json\"",
+    "Category": "BAPBAP Dedicated Host:settings_applications",
+    "SubCategory": "Startup:play_arrow:1",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Launcher Working Directory",
+    "Description": "Working directory from which the launcher is started.",
+    "Keywords": "startup workingdir cwd path",
+    "FieldName": "$LauncherWorkingDir",
+    "InputType": "text",
+    "DefaultValue": "./",
+    "Category": "BAPBAP Dedicated Host:settings_applications",
+    "SubCategory": "Startup:play_arrow:1",
+    "EnumValues": {}
+  }
+]
