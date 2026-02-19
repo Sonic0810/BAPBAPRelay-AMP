@@ -1,0 +1,19 @@
+{
+  "apiPort": 26910,
+  "gamePort": 26905,
+  "tickRate": 30,
+  "maxPlayers": 8,
+  "protocolVersion": 2,
+  "minModVersion": "1.0.0",
+  "defaultModeId": 1,
+  "defaultMapId": 22,
+  "defaultMaxPlayers": 8,
+  "adminAllowlistAccountIds": [],
+  "enableStrictValidation": false,
+  "serverBuildId": "2026-02-18_dedicated_v1",
+  "playerTimeoutSeconds": 15,
+  "publicHost": "CHANGE_ME_PUBLIC_IP_OR_DNS",
+  "prepareTimeoutSeconds": 90,
+  "maxMatchSeconds": 3600,
+  "apiKey": ""
+}

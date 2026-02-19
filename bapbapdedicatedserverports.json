@@ -1,0 +1,18 @@
+[
+  {
+    "Port": 26910,
+    "Protocol": 0,
+    "Ref": "ApiPort",
+    "Name": "Coordinator API",
+    "Description": "HTTP control API for reserve/start/end/reset and status",
+    "Required": true
+  },
+  {
+    "Port": 26905,
+    "Protocol": 1,
+    "Ref": "GamePort",
+    "Name": "Gameplay UDP",
+    "Description": "UDP gameplay endpoint for modded clients",
+    "Required": true
+  }
+]

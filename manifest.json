@@ -5,18 +5,16 @@
   "prefix": "BAPBAP",
   "configs": [
     {
-      "id": "bapbapdedicatedhost",
-      "AppConfigId": "a8b16688-1bce-42be-a85b-81f83e4de5b2",
-      "DisplayName": "BAPBAPDedicatedHost",
-      "Description": "Single-round dedicated host coordinator + relay for BAPBAP",
-      "kvp": "BAPBAPDedicatedHost.kvp",
+      "id": "bapbapdedicatedserver",
+      "AppConfigId": "5cbe9f64-6c81-4f36-a881-ae4f42f75617",
+      "DisplayName": "BAPBAPDedicatedServer",
+      "Description": "Standalone dedicated match server for BAPBAP modded clients",
+      "kvp": "BAPBAPDedicatedServer.kvp",
       "supportedFiles": [
-        "bapbapdedicatedhostports.json",
-        "bapbapdedicatedhostconfigmanifest.json",
+        "bapbapdedicatedserverports.json",
+        "bapbapdedicatedserverconfigmanifest.json",
         "start.sh",
-        "dedicatedhost.json",
-        "start-dedicated-round.sh",
-        "stop-dedicated-round.sh"
+        "dedicatedserver.json"
       ]
     }
   ]

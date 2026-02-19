@@ -1,0 +1,200 @@
+[
+  {
+    "DisplayName": "Launcher Executable",
+    "Description": "Executable AMP starts for this instance.",
+    "Keywords": "startup executable binary",
+    "FieldName": "$LauncherExecutable",
+    "InputType": "text",
+    "DefaultValue": "/bin/bash",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Startup:play_arrow:1",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Launcher Arguments",
+    "Description": "Startup command line used by AMP.",
+    "Keywords": "startup args commandline",
+    "FieldName": "$LauncherArgs",
+    "InputType": "text",
+    "DefaultValue": "-c \"chmod +x ./start.sh ./BAPBAPDedicatedServer || true; exec ./start.sh --config ./dedicatedserver.json --api-port {{$ApiPort}} --game-port {{$GamePort}} --tick-rate {{$TickRate}} --max-players {{$MaxPlayers}} --protocol-version {{$ProtocolVersion}} --min-mod-version '{{$MinModVersion}}' --default-mode-id {{$DefaultModeId}} --default-map-id {{$DefaultMapId}} --default-max-players {{$DefaultMaxPlayers}} --enable-strict-validation {{$EnableStrictValidation}} --server-build-id '{{$ServerBuildId}}' --admin-allowlist '{{$AdminAllowlistCsv}}' --player-timeout {{$PlayerTimeoutSeconds}} --public-host '{{$PublicHost}}' --prepare-timeout {{$PrepareTimeoutSeconds}} --max-match-seconds {{$MaxMatchSeconds}} --api-key '{{$ApiKey}}'\"",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Startup:play_arrow:1",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Launcher Working Directory",
+    "Description": "Working directory where startup command runs.",
+    "Keywords": "startup workingdir cwd path",
+    "FieldName": "$LauncherWorkingDir",
+    "InputType": "text",
+    "DefaultValue": "./",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Startup:play_arrow:1",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Tick Rate",
+    "Description": "Server snapshot tick rate in Hz.",
+    "Keywords": "tick rate hz",
+    "FieldName": "$TickRate",
+    "InputType": "text",
+    "DefaultValue": "30",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Max Players",
+    "Description": "Maximum players accepted by this instance.",
+    "Keywords": "players cap",
+    "FieldName": "$MaxPlayers",
+    "InputType": "text",
+    "DefaultValue": "8",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Protocol Version",
+    "Description": "Dedicated JSON protocol version required by server handshake.",
+    "Keywords": "protocol version handshake",
+    "FieldName": "$ProtocolVersion",
+    "InputType": "text",
+    "DefaultValue": "2",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Min Mod Version",
+    "Description": "Minimum required mod version for dedicated clients.",
+    "Keywords": "mod version minimum",
+    "FieldName": "$MinModVersion",
+    "InputType": "text",
+    "DefaultValue": "1.0.0",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Default Mode ID",
+    "Description": "Fallback BR mode id when lobby data is incomplete.",
+    "Keywords": "mode fallback",
+    "FieldName": "$DefaultModeId",
+    "InputType": "text",
+    "DefaultValue": "1",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Default Map ID",
+    "Description": "Fallback BR map id when lobby data is incomplete.",
+    "Keywords": "map fallback",
+    "FieldName": "$DefaultMapId",
+    "InputType": "text",
+    "DefaultValue": "22",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Default Match Cap",
+    "Description": "Default expected player cap for v1 dedicated BR.",
+    "Keywords": "default players cap",
+    "FieldName": "$DefaultMaxPlayers",
+    "InputType": "text",
+    "DefaultValue": "8",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Strict Validation",
+    "Description": "Enable stricter payload validation checks.",
+    "Keywords": "strict validation",
+    "FieldName": "$EnableStrictValidation",
+    "InputType": "text",
+    "DefaultValue": "false",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Server Build ID",
+    "Description": "Build marker emitted in reserve/hello_ack/diagnostics.",
+    "Keywords": "build id",
+    "FieldName": "$ServerBuildId",
+    "InputType": "text",
+    "DefaultValue": "2026-02-18_dedicated_v1",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Admin Allowlist CSV",
+    "Description": "Comma-separated account IDs granted dedicated admin/dev UI access.",
+    "Keywords": "admin allowlist",
+    "FieldName": "$AdminAllowlistCsv",
+    "InputType": "text",
+    "DefaultValue": "",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Network:router:3",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Player Timeout Seconds",
+    "Description": "Disconnect timeout for inactive clients.",
+    "Keywords": "timeout disconnect",
+    "FieldName": "$PlayerTimeoutSeconds",
+    "InputType": "text",
+    "DefaultValue": "15",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Prepare Timeout Seconds",
+    "Description": "How long coordinator can stay in Preparing state.",
+    "Keywords": "prepare timeout",
+    "FieldName": "$PrepareTimeoutSeconds",
+    "InputType": "text",
+    "DefaultValue": "90",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Max Match Seconds",
+    "Description": "Hard runtime cap before auto-end.",
+    "Keywords": "match timeout cap",
+    "FieldName": "$MaxMatchSeconds",
+    "InputType": "text",
+    "DefaultValue": "3600",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Gameplay:tune:2",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Public Host",
+    "Description": "Public DNS or IP clients should use for UDP gameplay.",
+    "Keywords": "public host dns ip",
+    "FieldName": "$PublicHost",
+    "InputType": "text",
+    "DefaultValue": "CHANGE_ME_PUBLIC_IP_OR_DNS",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Network:router:3",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "API Key",
+    "Description": "Optional API key required by POST endpoints (X-Api-Key). Leave blank to disable auth.",
+    "Keywords": "api key security",
+    "FieldName": "$ApiKey",
+    "InputType": "text",
+    "DefaultValue": "",
+    "Category": "BAPBAP Dedicated Server:settings_applications",
+    "SubCategory": "Network:router:3",
+    "EnumValues": {}
+  }
+]

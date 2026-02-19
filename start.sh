@@ -1,5 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 
-chmod +x ./BAPBAPDedicatedHost ./start-dedicated-round.sh ./stop-dedicated-round.sh || true
-exec ./BAPBAPDedicatedHost "$@"
+cd "$(dirname "$0")"
+
+if [[ ! -f "./BAPBAPDedicatedServer" ]]; then
+  echo "[BAPBAPDedicatedServer] Binary not found: ./BAPBAPDedicatedServer"
+  exit 1
+fi
+
+chmod +x ./BAPBAPDedicatedServer || true
+exec ./BAPBAPDedicatedServer "$@"
